@@ -29,7 +29,7 @@ const Formulario = () => {
             }}
         >
             <fieldset className="text-center">
-                <legend> Busca bebidas por categoría o ingrediente</legend>
+                <legend> Busca bebidas por categoría o ingredientes</legend>
               
             </fieldset>
             <div className="row mt-4">

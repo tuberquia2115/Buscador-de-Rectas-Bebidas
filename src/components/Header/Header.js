@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <header className="bg-alert text-center">
-            <h1>Busca de recetas de bebidas</h1>
+            <h1>Buscador de recetas de bebidas</h1>
             <img alt="developer" src={developer} width="80" height="80" style={{ borderRadius: '50px' }} />
             <p style={{ color: 'white', fontSize: '25px' }}>
                 Developer<br />
