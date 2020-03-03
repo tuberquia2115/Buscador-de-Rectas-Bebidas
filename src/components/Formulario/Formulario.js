@@ -3,6 +3,7 @@ import { CategoriasContext } from '../../context/categoriasContext'
 import { RecetasContext } from '../../context/recetasContext'
 
 
+
 const Formulario = () => {
 
     const [busqueda, guardarBusqueda] = useState({
@@ -11,7 +12,7 @@ const Formulario = () => {
     })
     const { categorias } = useContext(CategoriasContext);
     const { buscarRecetas, guardarConsultar } = useContext(RecetasContext);
-    
+
 
     const { nombre, categoria } = busqueda;
     const handleChange = e => {
@@ -29,6 +30,7 @@ const Formulario = () => {
         >
             <fieldset className="text-center">
                 <legend> Busca bebidas por categoría o ingrediente</legend>
+              
             </fieldset>
             <div className="row mt-4">
                 <div class="col-md-4">
