@@ -5,17 +5,6 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { ModalContext } from '../../context/modalContext'
 
-function getModalStyle() {
-    const top = 50;
-    const left = 50;
-
-    return {
-        top: `${top}%`,
-        left: `${left}%`,
-        transform: `translate(-${top}%, -${left}%)`,
-    };
-}
-
 const useStyles = makeStyles(theme => ({
     modal: {
         display: 'flex',
@@ -34,7 +23,6 @@ const useStyles = makeStyles(theme => ({
 
 const Receta = ({ receta }) => {
     //configuración del modal de material-ui
-    const [modalStyle] = useState(getModalStyle)
     const [open, setOpen] = useState(false);
     const { informacionReceta, guardarIdreceta, guardarInformaciónReceta } = useContext(ModalContext)
     const { strDrink, strDrinkThumb, idDrink } = receta;
